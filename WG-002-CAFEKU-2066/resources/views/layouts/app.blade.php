@@ -42,7 +42,7 @@
                             <a class="nav-link" href="{{ url('kategori') }}">{{ __('Kategori') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('pesen') }}">{{ __('Order') }}</a>
+                            <a class="nav-link" href="{{ url('dashboard') }}">{{ __('Order') }}</a>
                         </li>
                         @elseif (Auth::user()->role == 'owner')
                         <li class="nav-item">
@@ -55,7 +55,7 @@
                             <a class="nav-link" href="{{ url('user') }}">{{ __('User') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('pesen') }}">{{ __('Order') }}</a>
+                            <a class="nav-link" href="{{ url('dashboard') }}">{{ __('Order') }}</a>
                         </li>
                         @endif
                         @endguest
